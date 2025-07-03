@@ -1,28 +1,36 @@
-function renderRPS() {
-  const elGameRps = document.querySelector('.RPS')
-  const elPlayer = document.querySelector('.player span')
-  const elComputerMove = document.querySelector('.computer-move')
-  const elResult = document.querySelector('.result')
+function renderPlayerMove(playerMove) {
+  // body
+}
 
-  // Очищаем предыдущие ходы и результат
-  elPlayer.textContent = 'Ваш ход: '
-  elComputerMove.textContent = ''
-  elResult.textContent = ''
-
-  // Добавляем ход игрока
-  if (currentPlayerMove) {
-    elPlayer.textContent += currentPlayerMove
-  }
-
-  if (currentComputerMove) {
-    elComputerMove.textContent = currentComputerMove
-  }
+function renderComputerMove(computerMove) {
+  // body
 }
 
 function renderResult(result) {
   const elResult = document.querySelector('.result')
   elResult.textContent = result
 }
+
+// function renderRPS() {
+//   const elGameRps = document.querySelector('.RPS')
+//   const elPlayer = document.querySelector('.player span')
+//   const elComputerMove = document.querySelector('.computer-move')
+//   const elResult = document.querySelector('.result')
+
+//   // Очищаем предыдущие ходы и результат
+//   elPlayer.textContent = 'Ваш ход: '
+//   elComputerMove.textContent = ''
+//   elResult.textContent = ''
+
+//   // Добавляем ход игрока
+//   if (currentPlayerMove) {
+//     elPlayer.textContent += currentPlayerMove
+//   }
+
+//   if (currentComputerMove) {
+//     elComputerMove.textContent = currentComputerMove
+//   }
+// }
 
 function onClickButtonRock(e) {
   handlePlayerMove(e.target.textContent)

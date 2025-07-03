@@ -1,8 +1,10 @@
-function handlePlayerMove(text) {
-  playerMove(text)
+function handlePlayerMove(move) {
+  playerMove(move)
+  randomPCMove()
+  const result = compareMoves(currentPlayerMove, currentComputerMove)
   renderRPS()
   handlePCMove()
-  handleCompareMove(text)
+  handleCompareMove(move)
 }
 
 function handlePCMove() {

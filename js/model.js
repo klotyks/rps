@@ -26,12 +26,20 @@ function compareMoves(playerMove, computerMove) {
   }
   return 'Lose...'
 }
+
+// function round(move) {
+//   playerMove(move)
+//   randomPCMove()
+//   currentPlayerMove
+//   currentComputerMove
+//   result = compareMoves(currentPlayerMove, currentComputerMove)
+//   result
+// }
+
+let result
+
+round('Rock')
+
 playerMove('Rock')
 randomPCMove()
-currentPlayerMove
-currentComputerMove
-const result = compareMoves(currentPlayerMove, currentComputerMove)
-result
-
-// console.log(String.fromCodePoint(72))
-// console.log(String.fromCodePoint(97 + 26 - 1))
+result = compareMoves(currentPlayerMove, currentComputerMove)
