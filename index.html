@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .result {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="RPS">
+        <div class="game-name">
+          <h1>Game "RPS"</h1>
+        </div>
+        <div class="player">
+          <span>Ваш ход:</span>
+          <button class="rock">Rock</button>
+          <button class="scissors">Scissors</button>
+          <button class="paper">Paper</button>
+        </div>
+        <div class="computer">
+          <h3>Ход компьютера:</h3>
+          <span class="computer-move"></span>
+        </div>
+        <div class="result"></div>
+      </div>
+    </div>
+    <script src="./js/view.js"></script>
+    <script src="./js/model.js"></script>
+    <script src="./js/controller.js"></script>
+  </body>
+</html>
